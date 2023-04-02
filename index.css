@@ -16,7 +16,6 @@ header,
 }
 
 header{
-    //justify-content: start; /* Center horizontally */
     align-items: center; /* Center vertically */
     background-image: url("images/burger.png");
     background-size: cover;
@@ -40,7 +39,6 @@ h3{
 }
 
 .menu-container{
-   //justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
     margin-top: 67px;
 }
@@ -75,7 +73,25 @@ p2{
     border-radius: 50%;
     width: 50px;
     height: 50px;
+}
+
+.add-btn,
+.remove-btn,
+.complete-btn,
+#pay-btn{
     cursor: pointer;
+}
+
+.add-btn:hover,
+.add-btn:focus,
+.remove-btn:hover,
+.remove-btn:focus,
+.complete-btn:hover,
+.complete-btn:focus,
+#pay-btn:hover,
+#pay-btn:focus{
+    background-color: #474350;
+    color: white;
 }
 
 .order-container {
@@ -105,7 +121,6 @@ p2{
     font-size: 12px;
     background: none;
     color: #BBBBBB;
-    cursor: pointer;
 }
 
 .complete-btn{
@@ -115,14 +130,19 @@ p2{
     padding: 10px;
     outline:none;
     border: none;
+    border-radius: 5px;
     background-color: #16DB99;
     color: #ffffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     margin: 53px 46px;
-    cursor: pointer;
+}
+
+.complete-btn,
+.card-details-header,
+#pay-btn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
 }
 
 .total {
@@ -148,37 +168,32 @@ p2{
 }
 
 .card-details-header{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
-    font-weight: 700;
     text-align: center;
     margin: 46px 110px;
 }
 
 input{
-    padding-left: 26px;
-    padding-top: 16px;
-    padding-bottom: 13px;
+    background-color: whitesmoke;
+    padding: 16px 0 13px 26px;
     border: 1.3px solid #757575;
-    margin-bottom: 23px;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin: 0px 24px 23px 24px;
     border-radius: 6px;
 }
 
 #pay-btn{
-    padding-top: 16px;
-    padding-bottom: 13px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 700;
+    padding:16px 0 13px 0;
     font-size: 20px;
     background-color: #16DB99;
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-top: 22px; 
-    margin-bottom: 29px;
-    cursor: pointer;
+    margin: 22px 24px 29px 24px;
     border-radius: 6px;
+}
+
+input:hover,
+input:focus{
+    cursor: text;
+    opacity: .5;
+    background-color: black;
 }
 
 .outgoing-msg{
