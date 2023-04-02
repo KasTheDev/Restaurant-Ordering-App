@@ -1,0 +1,188 @@
+body {
+    font-family: 'Smythe', cursive;
+    line-height: 24px;
+    margin: 0;
+} 
+
+header, 
+.menu-container, 
+.item-container, 
+.menu-items, 
+.order-item, 
+.order-item-info, 
+.your-order, 
+.total{
+    display: flex;
+}
+
+header{
+    //justify-content: start; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-image: url("images/burger.png");
+    background-size: cover;
+    height: 167px;
+    width: 100%;
+    color: white;
+    padding-top: 46px;
+}
+
+.header-content{
+    margin-left: 46px;
+}
+
+h2{
+    margin: 0 0 8.8px 0;
+}
+
+h3{
+    font-size: 22px;
+    line-height: 14px;
+}
+
+.menu-container{
+   //justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    margin-top: 67px;
+}
+
+.menu-container,
+.item-container{
+    flex-direction: column;
+}
+
+.icon-img{
+    height: 89px;
+    margin-right: 30px;
+}
+
+.menu-items{
+    padding-bottom: 51px;
+    margin-bottom: 45px;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+p1{
+    width: 358px;
+    height: 24px;
+}
+
+p2{
+    padding-top: 8px;
+}
+
+.add-btn{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.order-container {
+    display: none;
+}
+
+.your-order{
+    justify-content: center;
+}
+
+.order-item, .order-item-info{
+    justify-content: space-between;
+}
+
+.order-items{
+    margin: 64px 46px 0 46px;
+}
+
+.order-item-info {
+    gap: 13px;
+    align-items: center;
+}
+
+.remove-btn{
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    background: none;
+    color: #BBBBBB;
+    cursor: pointer;
+}
+
+.complete-btn{
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    outline:none;
+    border: none;
+    background-color: #16DB99;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 53px 46px;
+    cursor: pointer;
+}
+
+.total {
+    justify-content: space-between;
+    margin: 14px 46px 0 46px;
+    border-top: 2px solid #393333;
+}
+
+.modal{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 524px;
+    height: 440px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.card-details-header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 46px 110px;
+}
+
+input{
+    padding-left: 26px;
+    padding-top: 16px;
+    padding-bottom: 13px;
+    border: 1.3px solid #757575;
+    margin-bottom: 23px;
+    margin-left: 24px;
+    margin-right: 24px;
+    border-radius: 6px;
+}
+
+#pay-btn{
+    padding-top: 16px;
+    padding-bottom: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #16DB99;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 22px; 
+    margin-bottom: 29px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.outgoing-msg{
+    display: none;
+    text-align: center;
+    background: blue;
+    padding: 20px
+}
