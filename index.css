@@ -200,6 +200,9 @@ input:focus{
 .outgoing-msg{
     display: none;
     text-align: center;
-    background: blue;
-    padding: 20px
+    background: #ECFDF5;
+    color: darkgreen;
+    margin: 50px;
+    padding: 51px 60px;
+    border-radius: 3px;
 }
