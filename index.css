@@ -194,6 +194,7 @@ input:focus{
     cursor: text;
     opacity: .5;
     background-color: black;
+    color: white;
 }
 
 .outgoing-msg{
