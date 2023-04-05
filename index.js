@@ -7,6 +7,10 @@ const completeBtn = document.getElementById('complete-btn')
 const modal = document.getElementById('modal')
 const payBtn = document.getElementById('pay-btn')
 const outgoingMsg = document.getElementById('outgoing-msg')
+const nameInput = document.getElementById('full-name')
+const ccnInput = document.getElementById('ccn')
+const ccvInput = document.getElementById('ccv')
+
 
 //--Menu--//
 
@@ -43,10 +47,11 @@ document.addEventListener('click', function(e){
         removeOrderClick(e.target.dataset.remove)
         }
     else if(e.target.dataset.id == 'complete-btn'){
-        modal.style.display = 'flex';
+        modal.style.display = 'flex'
     }
-    else if(e.target.id == 'pay-btn'){
-        outgoingMsg.style.display = 'block'
+    else if(e.target.dataset.pay){
+        e.preventDefault()
+        validateInputs(e.target.dataset.pay)
     }
 })
 
@@ -88,5 +93,13 @@ function renderOrder(){
         }
     })
 }
-console.log(payBtn)
-console.log('Event listener added.')
+
+function validateInputs() {
+  if (!nameInput.value || !ccnInput.value || !ccvInput.value) {
+  } 
+  else {
+    modal.style.display = 'none'
+    outgoingMsg.style.display = 'block'
+    outgoingMsg.innerHTML = `Thank you ${nameInput.value}! Your order is on its way!`
+  }
+}

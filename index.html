@@ -38,15 +38,14 @@
         
         <form class="modal" id="modal">
             <h2 class="card-details-header">Enter Card Details</h2>
-            <input type="text" name="fullName" placeholder="Enter your name" required/>
+            <input id="full-name" type="text" name="fullName" placeholder="Enter your name" required/>
             <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
             <input id="ccv" type="tel" inputmode="numeric" pattern="[0-9]{3}" autocomplete="ccv" minlength="3" maxlength="3" placeholder="cvv" required>
-            <button type="submit" id="pay-btn" data-id="pay-btn">Pay</button>  
+            <button type="submit" id="pay-btn" data-pay="pay-btn">Pay</button>  
         </form>
         
-        <h2 class="outgoing-msg" id="outgoing-msg">Thank you! Your order is on its way<h2>
+        <h2 class="outgoing-msg" id="outgoing-msg">Thank you! Your order is on its way</h2>
         
 	<script src="index.js" type="module" ></script>
     </body>
 </html>
-
